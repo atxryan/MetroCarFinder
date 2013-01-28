@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="170RyanJoy.MetroCarFinder" Version="1.0.0.1" Publisher="CN=D83F780E-7ADD-4288-B0AA-4634C2B3E838" />
+  <Properties>
+    <DisplayName>Metro CarFinder</DisplayName>
+    <PublisherDisplayName>Ryan Joy</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <!--<Resource Language="x-generate" />-->
+    <!-- Languages are manually set below since some resources are there just for illustrative purposes. 
+         Typically, this can be generated automatically using the above. -->
+    <Resource Language="EN" />
+    <Resource Language="DE" />
+    <Resource Language="FR" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="Metro CarFinder" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="MetroCarFinder" ForegroundText="light" BackgroundColor="#009FE4">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="images\splashscreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+</Package>

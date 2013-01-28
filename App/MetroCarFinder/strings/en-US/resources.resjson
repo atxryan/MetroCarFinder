@@ -1,0 +1,25 @@
+﻿// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
+
+{
+    // Cities
+    "Austin" : "Austin"
+
+    // Appbar commands
+    , "MyLocation"                  : "My Location"
+    , "MyLocationTooltip"           : "en-US Command1 Tooltip"
+    , "GetAllCars"                  : "Refresh"
+    , "GetAllCarsTooltip"           : ""
+    , "ShowParking"                 : "Show parking spots"
+    , "ShowParkingTooltip"          : ""
+
+    , "ChangeCity"                  : "Change city"
+
+    // Settings
+    , "Settings"                    : "Settings"
+
+    , "SignInToYourAccount"         : "Sign in to your account"
+    , "SignInButton"                : "Sign in"
+    , "Choose_your_car2go_city"     : "Choose your car2go operating city"
+    , "City_label"                  : "City"
+
+}

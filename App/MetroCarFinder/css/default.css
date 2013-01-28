@@ -1,0 +1,84 @@
+﻿body {
+}
+
+#MapDiv {
+	width: 100px;
+	height: 200px;
+}
+
+.win-appbar {
+    background-color: #009FE4;
+}
+
+.MicrosoftNav {
+    display: none;
+}
+progress::-ms-fill { animation-name:-ms-bar; }
+
+.infobox{
+		position:relative;
+		background-color:white;
+		border:1px solid rgb(136, 136, 136);
+		padding: 10px;
+		left:0px;
+		top:0px;
+		width:375px;
+    }
+	
+    .infobox_content{font-size: 14px; line-height: 1.4;}
+	
+	.infobox_content .thumbnail {margin-right: 10px; border: 1px solid #ccc;}
+	
+	.infobox_content .address {font-weight: 300; font-size: 20px; line-height: 1;}
+	
+	.infobox_content .price {font-weight: bold; color: #000;}
+
+	.infobox_content .secondaryInfo {display: block; padding-top: 10px;}
+	
+    .infobox_pointer {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    left: 20px;
+    top: -1px;
+    }
+
+#backAppBar {
+    /*background-color:rgba(255,255,255,.8);*/
+    font-size:2em;
+    font-weight:200;
+}
+
+#backAppBar li {
+    padding:0 10px;
+    vertical-align:middle;
+}
+
+#backAppBar li:first-child {
+    padding:0 10px 0 0;
+}
+
+#backAppBar a {
+    color:#444;
+}
+.inln_blck li{
+    display:inline-block;
+}
+
+.win-settingsflyout .win-header {
+    background-color: #009FE4;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
