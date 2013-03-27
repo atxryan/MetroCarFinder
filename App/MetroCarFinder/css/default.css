@@ -71,6 +71,10 @@ progress::-ms-fill { animation-name:-ms-bar; }
     background-color: #009FE4;
 }
 
+.change_city {
+    font-size: 12px;
+}
+
 @media screen and (-ms-view-state: fullscreen-landscape) {
 }
 

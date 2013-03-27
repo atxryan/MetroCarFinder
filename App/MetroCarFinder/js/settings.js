@@ -5,16 +5,11 @@
 //// 
 //// Copyright (c) Microsoft Corporation. All rights reserved 
 
+
+/
+
 (function () {
     "use strict";
-
-
-
-    
-    
-})();
-
-(function () {
 
     var appLanguages = Windows.Globalization.ApplicationLanguages;
     var languages = appLanguages.languages;
@@ -80,6 +75,7 @@
         // according to it first.
         _change: function () {
             appLanguages.primaryLanguageOverride = this.value;
+            WinJS.Resources.processAll();
         }
 
     });

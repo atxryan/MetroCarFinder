@@ -47,8 +47,8 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>MetroCarFinder_StoreKey.pfx</PackageCertificateKeyFile>
-    <PackageCertificateThumbprint>987ED7043E72A4B10B9C173A3B6EF41A63A22301</PackageCertificateThumbprint>
+    <PackageCertificateKeyFile>MetroCarFinder_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>8D3AD0F9F9145E928336FD59B1C53FAD8DA9AB30</PackageCertificateThumbprint>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
   </PropertyGroup>
   <ItemGroup>
@@ -65,12 +65,11 @@
     <Content Include="css\default.css" />
     <Content Include="js\map.js" />
     <Content Include="js\car2go.js" />
-    <None Include="Package.StoreAssociation.xml" />
     <None Include="MetroCarFinder_StoreKey.pfx" />
     <Content Include="js\settings.js" />
+    <None Include="MetroCarFinder_TemporaryKey.pfx" />
     <Content Include="settings\about.html" />
     <Content Include="settings\settings.html" />
-    <None Include="MetroCarFinder_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Bing.Maps.JavaScript, Version=1.0" />
