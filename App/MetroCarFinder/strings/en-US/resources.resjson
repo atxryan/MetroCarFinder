@@ -6,7 +6,7 @@
 
     // Appbar commands
     , "MyLocation"                  : "My Location"
-    , "MyLocationTooltip"           : "en-US Command1 Tooltip"
+    , "MyLocationTooltip"           : ""
     , "GetAllCars"                  : "Refresh"
     , "GetAllCarsTooltip"           : ""
     , "ShowParking"                 : "Show parking spots"
@@ -16,10 +16,11 @@
 
     // Settings
     , "Settings"                    : "Settings"
-
     , "SignInToYourAccount"         : "Sign in to your account"
     , "SignInButton"                : "Sign in"
     , "Choose_your_car2go_city"     : "Choose your car2go operating city"
     , "City_label"                  : "City"
+    , "DisplayLanguageHeader"       : "Display Language"
+
 
 }

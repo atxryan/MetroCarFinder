@@ -47,9 +47,9 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>MetroCarFinder_TemporaryKey.pfx</PackageCertificateKeyFile>
-    <PackageCertificateThumbprint>8D3AD0F9F9145E928336FD59B1C53FAD8DA9AB30</PackageCertificateThumbprint>
-    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <PackageCertificateKeyFile>MetroCarFinder_StoreKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>249B9CB78C6ACBAA83163E86181D9E04C6B2C781</PackageCertificateThumbprint>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -68,6 +68,7 @@
     <None Include="MetroCarFinder_StoreKey.pfx" />
     <Content Include="js\settings.js" />
     <None Include="MetroCarFinder_TemporaryKey.pfx" />
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="settings\about.html" />
     <Content Include="settings\settings.html" />
   </ItemGroup>

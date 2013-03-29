@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="170RyanJoy.MetroCarFinder" Version="1.0.0.1" Publisher="CN=ryanjoy" />
+  <Identity Name="170RyanJoy.MetroCarFinder" Version="1.0.0.2" Publisher="CN=D83F780E-7ADD-4288-B0AA-4634C2B3E838" />
   <Properties>
     <DisplayName>Metro CarFinder</DisplayName>
     <PublisherDisplayName>Ryan Joy</PublisherDisplayName>

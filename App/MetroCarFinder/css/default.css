@@ -11,7 +11,7 @@
 }
 
 .MicrosoftNav {
-    display: none;
+    /*display: none;*/
 }
 progress::-ms-fill { animation-name:-ms-bar; }
 
