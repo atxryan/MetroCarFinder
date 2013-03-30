@@ -22,5 +22,8 @@
     , "City_label"                  : "City"
     , "DisplayLanguageHeader"       : "Display Language"
 
+    // About
+    , "About_whatis_header"      : "What is MetroCarFinder?"
+    , "About-whatis.content"        : "MetroCarFinder is an app to find available car2go vehicles in supported cities."
 
 }

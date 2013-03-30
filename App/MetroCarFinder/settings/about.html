@@ -1,7 +1,8 @@
 ﻿<!doctype HTML>
 <html>
     <head>
-        <title>Help settings flyout</title>
+        <title>About</title>
+        <script src="/js/settings-about.js"></script>
     </head>
     <body>
         <!-- BEGINSETTINGFLYOUT -->
@@ -10,19 +11,12 @@
             <div class="win-ui-dark win-header" style="background-color:#00b2f0"> <!-- Background color reflects app's personality -->
                <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
                <div class="win-label">Help</div>
-               <img src="../images/smallTile-sdk.png" style="position: absolute; right: 40px;"/>
+               <img src="/images/smalllogo.png" style="position: absolute; right: 40px;"/>
             </div>
             <div class="win-content ">
                 <div class="win-settings-section">
-                    <h3>Settings charm usage guidelines summary</h3>
-                    <ul>
-                        <li>Settings should be instant commit.</li>
-                        <li>Allow users to dismiss the settings flyout by tapping outside of it. Don’t use cancel or close buttons.</li>
-                        <li>Minimize the number of settings by including only settings that users really need.</li>
-                        <li>Only include settings that are about configuring the app and its behavior. Don’t use the settings flyout for app commands, navigation or very frequently changed settings.</li>
-                        <li>The layout in this template reflects the recommended layout for settings flyouts.</li>
-                        <li>For more in-depth usage guidance, refer to the <a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh770544">App settings UX guide</a>.</li>
-                    </ul>
+                    <h3 data-win-res="{textContent: 'About_whatis_header'}"></h3>
+                    <p data-win-res="{textContent: 'About-whatis.content'}"></p>
                 </div>
             </div>
         </div>

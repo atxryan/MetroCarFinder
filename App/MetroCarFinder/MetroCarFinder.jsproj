@@ -49,7 +49,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <PackageCertificateKeyFile>MetroCarFinder_StoreKey.pfx</PackageCertificateKeyFile>
     <PackageCertificateThumbprint>249B9CB78C6ACBAA83163E86181D9E04C6B2C781</PackageCertificateThumbprint>
-    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -58,19 +58,21 @@
     <Content Include="default.html" />
     <Content Include="images\logo.png" />
     <Content Include="images\pin_car.png" />
+    <Content Include="images\pin_parking.png" />
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
     <Content Include="js\map.js" />
-    <Content Include="js\car2go.js" />
+    <Content Include="js\settings-about.js" />
+    <Content Include="settings\about.html" />
+    <Content Include="settings\help.html" />
+    <Content Include="settings\settings.html" />
     <None Include="MetroCarFinder_StoreKey.pfx" />
     <Content Include="js\settings.js" />
     <None Include="MetroCarFinder_TemporaryKey.pfx" />
     <None Include="Package.StoreAssociation.xml" />
-    <Content Include="settings\about.html" />
-    <Content Include="settings\settings.html" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Bing.Maps.JavaScript, Version=1.0" />
