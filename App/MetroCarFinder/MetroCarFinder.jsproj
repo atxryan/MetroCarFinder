@@ -66,6 +66,7 @@
     <Content Include="css\default.css" />
     <Content Include="js\map.js" />
     <Content Include="js\settings-about.js" />
+    <Content Include="settings\privacy.html" />
     <Content Include="settings\about.html" />
     <Content Include="settings\help.html" />
     <Content Include="settings\settings.html" />
