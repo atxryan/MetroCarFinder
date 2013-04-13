@@ -14,16 +14,24 @@
 
     , "ChangeCity"                  : "Change city"
 
-    // Settings
+    // Settings charms
     , "Settings"                    : "Settings"
+    , "About"                       : "About"
+    , "Privacy_policy"              : "Privacy policy"
+
+
+    // Settings
     , "SignInToYourAccount"         : "Sign in to your account"
     , "SignInButton"                : "Sign in"
     , "Choose_your_car2go_city"     : "Choose your car2go operating city"
     , "City_label"                  : "City"
     , "DisplayLanguageHeader"       : "Display Language"
+    , "Fuel_level"                  : "Fuel level"
 
     // About
-    , "About_whatis_header"      : "What is MetroCarFinder?"
-    , "About-whatis.content"        : "MetroCarFinder is an app to find available car2go vehicles in supported cities."
+    , "About_whatis_header"         : "What is MetroCarFinder?"
+    , "About-whatis_content"        : "<p>MetroCarFinder is an app to find available car2go vehicles in supported cities.</p>"
 
+    // Privacy policy
+    , "Privacy_policy_content"      : "<p>MetroCarFinder does not track nor does it save any personally identifiable information. In fact, it saves no information at all. All data is passed to Bing Maps and to the car2go location services.</p>"
 }

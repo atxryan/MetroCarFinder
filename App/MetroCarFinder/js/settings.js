@@ -1,11 +1,147 @@
-﻿//// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF 
-//// ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO 
-//// THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A 
-//// PARTICULAR PURPOSE. 
-//// 
-//// Copyright (c) Microsoft Corporation. All rights reserved 
+﻿
+
+(function () {
+    var cities = [];
+
+    var page = WinJS.UI.Pages.define("/settings/settings.html", {
+
+        ready: function (element, options) {
+            WinJS.Resources.processAll();
+
+            // Register the handlers for dismissal 
+            document.getElementById("programmaticInvocationSettingsFlyout").addEventListener("keydown", handleAltLeft);
+            document.getElementById("programmaticInvocationSettingsFlyout").addEventListener("keypress", handleBackspace);
 
 
+            // populate cities select dropdown
+            getCities();
+
+            //document.getElementById("Authenticate").addEventListener("click", MCF.launchCar2GoWebAuth);
+
+            document.getElementById("fuel").value = MCF.options.fuel;
+
+            document.getElementById("fuel").addEventListener("blur", function () {
+                MCF.options.fuel = this.value;
+                MCF.getAllCars();
+            });
+
+            document.getElementById("Settings-Cities").addEventListener("change", function () {
+                var select = this;
+                MCF.options.city = select.value;
+
+
+                var localSettings = Windows.Storage.ApplicationData.current.localSettings;
+                localSettings.values["userCity"] = select.value;
+
+                document.getElementsByClassName("CurrentCity")[0].innerText = select.value;
+
+                // Set the map center
+
+                cities.forEach(function (city) {
+                    if (city.locationName === select.value) {
+                        var myLocation = new Microsoft.Maps.Location(city.mapSection.center.latitude, city.mapSection.center.longitude);
+                        MCF.map.setView({ center: myLocation });
+
+                        localSettings.values["userLatitude"] = city.mapSection.center.latitude;
+                        localSettings.values["userLongitude"] = city.mapSection.center.longitude;
+                    }
+                });
+
+                MCF.getAllCars();
+
+                // Load resources.
+                // loadResources();
+                // Enable listener so they get updated when user changes language selection.
+                // WinJS.Resources.addEventListener("contextchanged", loadResources);
+
+            });
+
+            var applicationLanguages = Windows.Globalization.ApplicationLanguages.languages;
+            //var currentLanguage = document.getElementById("CurrentLanguage");
+            //currentLanguage.innerText = "The application language(s) are: " + applicationLanguages;
+
+        },
+
+        unload: function () {
+            // Remove the handlers for dismissal 
+            document.getElementById("programmaticInvocationSettingsFlyout").removeEventListener("keydown", handleAltLeft);
+            document.getElementById("programmaticInvocationSettingsFlyout").removeEventListener("keypress", handleBackspace);
+        },
+    });
+    var page = WinJS.UI.Pages.define("/settings/privacy.html", {
+
+        ready: function (element, options) {
+            WinJS.Resources.processAll();
+
+            // Register the handlers for dismissal 
+            document.getElementById("programmaticInvocationSettingsFlyout").addEventListener("keydown", handleAltLeft);
+            document.getElementById("programmaticInvocationSettingsFlyout").addEventListener("keypress", handleBackspace);
+        },
+        unload: function () {
+            // Remove the handlers for dismissal 
+            document.getElementById("programmaticInvocationSettingsFlyout").removeEventListener("keydown", handleAltLeft);
+            document.getElementById("programmaticInvocationSettingsFlyout").removeEventListener("keypress", handleBackspace);
+        }
+    });
+    var page = WinJS.UI.Pages.define("/settings/about.html", {
+
+        ready: function (element, options) {
+            WinJS.Resources.processAll();
+
+            // Register the handlers for dismissal 
+            document.getElementById("programmaticInvocationSettingsFlyout").addEventListener("keydown", handleAltLeft);
+            document.getElementById("programmaticInvocationSettingsFlyout").addEventListener("keypress", handleBackspace);
+        },
+        unload: function () {
+            // Remove the handlers for dismissal 
+            document.getElementById("programmaticInvocationSettingsFlyout").removeEventListener("keydown", handleAltLeft);
+            document.getElementById("programmaticInvocationSettingsFlyout").removeEventListener("keypress", handleBackspace);
+        }
+    });
+
+    function handleAltLeft(evt) {
+        // Handles Alt+Left in the control and dismisses it 
+        if (evt.altKey && evt.key === 'Left') {
+            WinJS.UI.SettingsFlyout.show();
+        }
+    };
+
+    function handleBackspace(evt) {
+        // Handles the backspace key or alt left arrow in the control and dismisses it 
+        if (evt.key === 'Backspace') {
+            WinJS.UI.SettingsFlyout.show();
+        }
+    };
+
+    function getCities() {
+        // {"countryCode":"DE","defaultLanguage":"de","locationId":1,"locationName":"Ulm","mapSection":{"center":{"latitude":48.3987,"longitude":9.9968},"lowerRight":{"latitude":48.31105789,"longitude":10.06828308},"upperLeft":{"latitude":48.48111472,"longitude":9.8588562}},"timezone":"Europe/Berlin"}
+        var cities_url = "https://www.car2go.com/api/v2.1/locations?oauth_consumer_key=MetroCarFinder&format=json";
+
+        WinJS.xhr({ url: cities_url }).done(
+        function fulfilled(result) {
+            if (result.status === 200) {
+                var cities_json = JSON.parse(result.responseText);
+                cities = new WinJS.Binding.List(cities_json.location);
+
+                var select = document.getElementById("Settings-Cities");
+
+                cities.forEach(function (city) {
+                    var option = document.createElement("option");
+                    option.value = city.locationName;
+                    option.innerText = city.locationName;
+                    option.setAttribute("data-long", city.mapSection.center.latitude);
+                    option.setAttribute("data-lat", city.mapSection.center.longitude);
+
+                    if (city.locationName === MCF.options.city) {
+                        option.setAttribute("selected", "selected");
+                    }
+
+                    select.appendChild(option);
+                });
+            }
+        });
+    }
+})();
 
 
 (function () {

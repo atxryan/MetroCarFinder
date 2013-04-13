@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>App32</title>
+    <title>MetroCarFinder</title>
 
     <!-- WinJS references -->
     <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
@@ -13,13 +13,30 @@
     <script type="text/javascript" src="ms-appx:///Bing.Maps.JavaScript//js/veapicore.js"></script>
     <script type="text/javascript" src="ms-appx:///Bing.Maps.JavaScript//js/veapiModules.js"></script>
 
-    <!-- App32 references -->
+    <!-- MetroCarFinder references -->
+    <script src="js/config.js"></script>
+    <script src="js/oauth.js"></script>
     <link href="/css/default.css" rel="stylesheet" />
     <script src="/js/default.js"></script>
+
+    <!-- Microsoft Advertising references -->
+    <script src="/MSAdvertisingJS/ads/ad.js" ></script>
 </head>
 <body>
     
     <div id="MapDiv"></div>
+
+    <div data-win-control="MicrosoftNSJS.Advertising.AdControl" 
+data-win-options="{applicationId: 'd25517cb-12d4-4699-8bdc-52040c712cab',
+                    adUnitId: '10043134',
+                    isAutoRefreshEnabled: false,
+                    latitude: 40.47,
+                    longitude: 73.58,
+                    onAdRefreshed: myAdRefreshed,
+                    onErrorOccurred: myAdError,
+                    onEngagedChanged: myAdEngagedChanged,
+                    onPointerDown: myPointerDown,
+                    onPointerUp: myPointerUp }"></div>
 
     <div id="backAppBar" data-win-control="WinJS.UI.AppBar" aria-label="Navigation Bar" 
         data-win-options="{layout:'custom',placement:'top'}">
@@ -51,5 +68,11 @@
 
 
         <progress class="win-large"></progress>
+
+    <div data-win-control="MicrosoftNSJS.Advertising.AdControl" data-win-options="{adUnitId:'10043104', applicationId:'d25517cb-12d4-4699-8bdc-52040c712cab', isAutoRefreshEnabled:false}"
+                    style="width: 250px; height: 250px; z-index: 1;"></div>
+
+    <div id="pushPinAd"></div>
+
 </body>
 </html>
