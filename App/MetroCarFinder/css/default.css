@@ -76,6 +76,20 @@ progress::-ms-fill { animation-name:-ms-bar; }
     font-size: 12px;
 }
 
+#directionsItinerary {
+    
+    width: 25%;
+    height: 100%;
+    float: right;
+    background-color:#fff; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    color: #000;
+    overflow: auto;
+}
+
 @media screen and (-ms-view-state: fullscreen-landscape) {
 }
 
