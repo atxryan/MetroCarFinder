@@ -115,7 +115,7 @@
 
     function getCities() {
         // {"countryCode":"DE","defaultLanguage":"de","locationId":1,"locationName":"Ulm","mapSection":{"center":{"latitude":48.3987,"longitude":9.9968},"lowerRight":{"latitude":48.31105789,"longitude":10.06828308},"upperLeft":{"latitude":48.48111472,"longitude":9.8588562}},"timezone":"Europe/Berlin"}
-        var cities_url = "https://www.car2go.com/api/v2.1/locations?oauth_consumer_key=MetroCarFinder&format=json";
+        var cities_url = "https://www.car2go.com/api/v2.1/locations?oauth_consumer_key=" + Config.car2go.OAuth.consumerKey + "&format=json";
 
         WinJS.xhr({ url: cities_url }).done(
         function fulfilled(result) {

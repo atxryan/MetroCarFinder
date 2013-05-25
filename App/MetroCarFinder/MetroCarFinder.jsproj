@@ -67,6 +67,8 @@
     <Content Include="css\default.css" />
     <Content Include="js\map.js" />
     <Content Include="js\oauth.js" />
+    <Content Include="js\README.md" />
+    <Content Include="settings\howitworks.html" />
     <Content Include="settings\privacy.html" />
     <Content Include="settings\about.html" />
     <Content Include="settings\settings.html" />
@@ -83,6 +85,7 @@
   <ItemGroup>
     <PRIResource Include="strings\de-DE\resources.resjson" />
     <PRIResource Include="strings\en-US\resources.resjson" />
+    <PRIResource Include="strings\fr-FR\resources.resjson" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment

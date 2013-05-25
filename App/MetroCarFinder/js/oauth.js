@@ -1,6 +1,6 @@
 ﻿
 
-var TwitterOAuth = WinJS.Class.define(
+var Car2goOAuth = WinJS.Class.define(
     //Constructor
     function (consumerKey, consumerSecret, accessToken, accessTokenSecret, callbackUrl) {
         this._consumerKey = consumerKey;
