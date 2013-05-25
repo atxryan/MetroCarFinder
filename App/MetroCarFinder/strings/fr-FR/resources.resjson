@@ -1,0 +1,32 @@
+﻿{
+// Appbar commands
+  "MyLocation" : "Ma position"
+, "MyLocationTooltip" : "Chercher votre position courante"
+, "GetAllCars" : "Afficher tous les véhicules"
+, "GetAllCarsTooltip" : "Chercher tous les véhicules car2go"
+, "ShowParking" : "Afficher les parkings"
+, "ShowParkingTooltip" : "Afficher les places de parking car2go"
+ 
+, "ChangeCity" : "Changer la ville"
+ 
+// Settings charms
+, "Settings" : "Réglages"
+, "About" : "A propos"
+, "Privacy_policy" : "Règles de confidentialité"
+ 
+ 
+// Settings
+, "SignInToYourAccount" : "Se connecter"
+, "SignInButton" : "Se connecter"
+, "Choose_your_car2go_city" : "Choisissez votre ville car2go"
+, "City_label" : "Ville"
+, "DisplayLanguageHeader" : "Langue"
+, "Fuel_level" : "Jauge"
+ 
+// About
+, "About_whatis_header" : "Qu'est ce que MetroCarFinder?"
+, "About-whatis_content" : "<p>MetroCarFinder est une application qui permet de localiser les véhicules car2go dans les villes où le service est disponible.</p>"
+ 
+// Privacy policy
+, "Privacy_policy_content" : "<p>MetroCarFinder ne sauvegarder aucune information personnellement identifiable. En fait, il n'enregistre aucune information du tout. Toutes les données sont transmises à Bing Maps et les services de localisation car2go.</p>"
+}

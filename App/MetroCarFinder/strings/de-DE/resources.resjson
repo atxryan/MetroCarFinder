@@ -1,11 +1,34 @@
-﻿// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
-
+﻿// de-de
 {
-    "Austin" : "Austin",
+    // Appbar commands
+      "MyLocation"                  : "Mein Standort"
+    , "MyLocationTooltip"           : "Finde deinen aktuellen Standort"
+    , "GetAllCars"                  : "Zeige alle Autos"
+    , "GetAllCarsTooltip"           : "Finde alle verfügbaren car2go Fahrzeuge"
+    , "ShowParking"                 : "Zeige mir einen Parkplatz"
+    , "ShowParkingTooltip"          : "Zeige mir alle car2go Parkplätze"
 
-    "greeting"              : "Hello World!",
-    "_greeting.comment"     : "This is a comment to the localizer",
+    , "ChangeCity"                  : "Stadt ändern"
 
-    "MyLocation"            : "Mein Standort",
-    "command1Tooltip"          : ""
+    // Settings charms
+    , "Settings"                    : "Einstellungen"
+    // 'Über' is the direct translation, but it is normally not written alone, most in combination with the name of the app 
+    , "About"                       : "Über MetroCarFinder"
+    , "Privacy_policy"              : "Datenschutzerklärung"
+
+
+    // Settings
+    , "SignInToYourAccount"         : "Mit ihrem Account einloggen"
+    , "SignInButton"                : "Einloggen"
+    , "Choose_your_car2go_city"     : "Wähle deine car3go Stadt"
+    , "City_label"                  : "Stadt"
+    , "DisplayLanguageHeader"       : "Sprache anzeigen"
+    , "Fuel_level"                  : "Tankanzeige"
+
+    // About
+    , "About_whatis_header"         : "Was ist der MetroCarFinder?"
+    , "About-whatis_content"        : "<p>MetroCarFinder ist eine App um alle car2go Fahrzeuge in einer Stadt zu finden.</p>"
+
+    // Privacy policy
+    , "Privacy_policy_content"      : "<p>MetroCarFinder speichert und übermittelt keine persönlichen Informationen. Kurz gesagt, es speichert überhaupt keine Informationen. Alle Daten werden zu Bing Maps und den car2go location services weitergeleitet.</p>"
 }

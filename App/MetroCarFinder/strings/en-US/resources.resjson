@@ -1,11 +1,6 @@
-﻿// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
-
-{
-    // Cities
-    "Austin" : "Austin"
-
+﻿{
     // Appbar commands
-    , "MyLocation"                  : "My Location"
+      "MyLocation"                  : "My Location"
     , "MyLocationTooltip"           : ""
     , "GetAllCars"                  : "Refresh"
     , "GetAllCarsTooltip"           : ""
@@ -34,4 +29,5 @@
 
     // Privacy policy
     , "Privacy_policy_content"      : "<p>MetroCarFinder does not track nor does it save any personally identifiable information. In fact, it saves no information at all. All data is passed to Bing Maps and to the car2go location services.</p>"
+
 }
