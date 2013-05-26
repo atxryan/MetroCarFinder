@@ -224,21 +224,71 @@ var MCF = MCF || {};
 
 
         var infoboxOptions = {
-            width: 270,
-            height: 300,
             showCloseButton: true,
             zIndex: 10,
-            offset: new Microsoft.Maps.Point(50, 0),
+            offset: new Microsoft.Maps.Point(50, 50),
             showPointer: false,
-            title: shape.title,
-            description: shape.description,
+            htmlContent: '<div class="infobox" style="">' +
+                '<h3 id="infoboxTitle">' + shape.title + '</h3><p id="infoboxDescription">' + shape.description + '</p>' +
+                '<div id="infoboxAd" style="width: 250px; height: 125px; z-index: 1" data-win-control="MicrosoftNSJS.Advertising.AdControl"></div></div>'
 
         };
         var defInfobox = new Microsoft.Maps.Infobox(shape.getLocation(), infoboxOptions);
         map.entities.push(defInfobox);
 
-        //defInfobox.setHtmlContent('<div id="infoboxText" style="background-color:White; border-style:solid;border-width:medium; border-color:DarkOrange; min-height:100px; position:absolute;top:0px; left:23px; width:240px;"><b id="infoboxTitle" style="position:absolute; top:10px; left:10px; width:220px;">' + shape.title + '</b><a id="infoboxDescription" style="position:absolute; top:30px; left:10px; width:220px;">' + shape.description + '</a></div>');
+        var infoboxAd = document.getElementById("infoboxAd");
+        var adControl = new MicrosoftNSJS.Advertising.AdControl(infoboxAd,
+                        {
+                            applicationId: Config.Bing.Ads.applicationId,
+                            adUnitId: Config.Bing.Ads.adUnit_250x125
+                        });
+        adControl.isAutoRefreshEnabled = true;
+        
 
+
+        //A buffer limit to use to specify the infobox must be away from the edges of the map.
+        var buffer = 25;
+
+        var infoboxOffset = defInfobox.getOffset();
+        var infoboxAnchor = defInfobox.getAnchor();
+        var infoboxLocation = map.tryLocationToPixel(shape.getLocation(), Microsoft.Maps.PixelReference.control);
+
+        var dx = infoboxLocation.x + infoboxOffset.x - infoboxAnchor.x;
+        var dy = infoboxLocation.y - 25 - infoboxAnchor.y;
+
+        if (dy < buffer) {    //Infobox overlaps with top of map.
+            //Offset in opposite direction.
+            dy *= -1;
+
+            //add buffer from the top edge of the map.
+            dy += buffer;
+        } else {
+            //If dy is greater than zero than it does not overlap.
+            dy = 0;
+        }
+
+        if (dx < buffer) {    //Check to see if overlapping with left side of map.
+            //Offset in opposite direction.
+            dx *= -1;
+
+            //add a buffer from the left edge of the map.
+            dx += buffer;
+        } else {              //Check to see if overlapping with right side of map.
+            dx = map.getWidth() - infoboxLocation.x + infoboxAnchor.x - defInfobox.getWidth();
+
+            //If dx is greater than zero then it does not overlap.
+            if (dx > buffer) {
+                dx = 0;
+            } else {
+                //add a buffer from the right edge of the map.
+                dx -= buffer;
+            }
+        }
+
+        //Adjust the map so infobox is in view
+        if (dx != 0 || dy != 0) {
+            map.setView({ centerOffset: new Microsoft.Maps.Point(dx, dy), center: map.getCenter() });
+        }
     }
 
     function getParkingSpots() {

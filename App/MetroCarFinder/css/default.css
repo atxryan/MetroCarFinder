@@ -15,35 +15,20 @@
 }
 progress::-ms-fill { animation-name:-ms-bar; }
 
-.infobox{
-		position:relative;
-		background-color:white;
-		border:1px solid rgb(136, 136, 136);
-		padding: 10px;
-		left:0px;
-		top:0px;
-		width:375px;
-    }
-	
-    .infobox_content{font-size: 14px; line-height: 1.4;}
-	
-	.infobox_content .thumbnail {margin-right: 10px; border: 1px solid #ccc;}
-	
-	.infobox_content .address {font-weight: 300; font-size: 20px; line-height: 1;}
-	
-	.infobox_content .price {font-weight: bold; color: #000;}
-
-	.infobox_content .secondaryInfo {display: block; padding-top: 10px;}
-	
-    .infobox_pointer {
-    width: 30px;
-    height: 30px;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    left: 20px;
-    top: -1px;
-    }
+.infobox {
+	position:absolute;
+	background-color:white;
+	border:1px solid #009FE4;
+	padding: 10px;
+	left:0px;
+	top:0px;
+	width:250px;
+    color: #000;
+}
+.infobox h3 {
+    font-weight: bold;
+}
+    
 
 #backAppBar {
     /*background-color:rgba(255,255,255,.8);*/
