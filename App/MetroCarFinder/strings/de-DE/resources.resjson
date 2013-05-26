@@ -13,9 +13,9 @@
     // Settings charms
     , "Settings"                    : "Einstellungen"
     // 'Über' is the direct translation, but it is normally not written alone, most in combination with the name of the app 
-    , "About"                       : "Über MetroCarFinder"
+    , "About"                       : "Über Metro car2go"
     , "Privacy_policy"              : "Datenschutzerklärung"
-
+    , "Share_app"                   : "Share this app"
 
     // Settings
     , "SignInToYourAccount"         : "Mit ihrem Account einloggen"
@@ -26,9 +26,16 @@
     , "Fuel_level"                  : "Tankanzeige"
 
     // About
-    , "About_whatis_header"         : "Was ist der MetroCarFinder?"
-    , "About-whatis_content"        : "<p>MetroCarFinder ist eine App um alle car2go Fahrzeuge in einer Stadt zu finden.</p>"
+    , "About_whatis_header"         : "Was ist der Metro car2go?"
+    , "About_whatis_content"        : "<p>Metro car2go ist eine App um alle car2go Fahrzeuge in einer Stadt zu finden.</p>"
+    , "About_credits_header"        : "Credits"
+    , "About_credits_content"       : "<p>Thanks to to the following contributors for their help.</p><ul><li>Icon &amp; graphic design: <a href='https://twitter.com/PaulAhernTweets'>@PaulAherTweets</a></li><li>German translation: <a href='http://twitter.com/asciidisco'>@asciidisco</a></li><li>French translation: <a href='http://twitter.com/opepin'>@opepin</a></li></ul>"
 
     // Privacy policy
-    , "Privacy_policy_content"      : "<p>MetroCarFinder speichert und übermittelt keine persönlichen Informationen. Kurz gesagt, es speichert überhaupt keine Informationen. Alle Daten werden zu Bing Maps und den car2go location services weitergeleitet.</p>"
+    , "Privacy_policy_content"      : "<p>Metro car2go speichert und übermittelt keine persönlichen Informationen. Kurz gesagt, es speichert überhaupt keine Informationen. Alle Daten werden zu Bing Maps und den car2go location services weitergeleitet.</p>"
+
+    // Share
+    , "Share_header"                : "Share this app"
+    , "Share_content"               : "<p>You can help get the word about this app by submitting a rating or review. Go to the app's page in the Store, tap or click Write a review, choose a rating, and then share your thoughts about the app.</p><p>Share a link to this app by clicking the button below.</p>"
+    , "Share_button"                : "Share"
 }

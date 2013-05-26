@@ -3,7 +3,7 @@
 (function () {
     var cities = [];
 
-    var page = WinJS.UI.Pages.define("/settings/settings.html", {
+    var settingsPage = WinJS.UI.Pages.define("/settings/settings.html", {
 
         ready: function (element, options) {
             WinJS.Resources.processAll();
@@ -68,7 +68,7 @@
             document.getElementById("programmaticInvocationSettingsFlyout").removeEventListener("keypress", handleBackspace);
         },
     });
-    var page = WinJS.UI.Pages.define("/settings/privacy.html", {
+    var privacyPage = WinJS.UI.Pages.define("/settings/privacy.html", {
 
         ready: function (element, options) {
             WinJS.Resources.processAll();
@@ -83,7 +83,7 @@
             document.getElementById("programmaticInvocationSettingsFlyout").removeEventListener("keypress", handleBackspace);
         }
     });
-    var page = WinJS.UI.Pages.define("/settings/about.html", {
+    var aboutPage = WinJS.UI.Pages.define("/settings/about.html", {
 
         ready: function (element, options) {
             WinJS.Resources.processAll();
@@ -98,6 +98,35 @@
             document.getElementById("programmaticInvocationSettingsFlyout").removeEventListener("keypress", handleBackspace);
         }
     });
+    var sharePage = WinJS.UI.Pages.define("/settings/shareapp.html", {
+        ready: function (element, options) {
+            WinJS.Resources.processAll();
+
+            var dataTransferManager = Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView();
+            dataTransferManager.removeEventListener("datarequested", linkDataRequested);
+
+            dataTransferManager.addEventListener("datarequested", linkDataRequested);
+            document.getElementById("shareButton").addEventListener("click", showShareUI, false);
+        },
+        unload: function () {
+            var dataTransferManager = Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView();
+            dataTransferManager.removeEventListener("datarequested", linkDataRequested);
+        }
+    });
+
+    function linkDataRequested(e) {
+        var request = e.request;
+        request.data.properties.title = "Metro car2go";
+        request.data.properties.description = "";
+        try {
+            request.data.setUri(new Windows.Foundation.Uri("http://apps.microsoft.com/windows/app/metro-carfinder/b5d654e1-3978-4521-b4f9-4edf1776dd06"));
+        } catch (ex) {
+        }
+    }
+
+    function showShareUI() {
+        Windows.ApplicationModel.DataTransfer.DataTransferManager.showShareUI();
+    }
 
     function handleAltLeft(evt) {
         // Handles Alt+Left in the control and dismisses it 

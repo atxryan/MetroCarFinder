@@ -14,7 +14,7 @@
     , "Settings" : "Réglages"
     , "About" : "A propos"
     , "Privacy_policy" : "Règles de confidentialité"
- 
+    , "Share_app"                   : "Share this app"
  
     // Settings
     , "SignInToYourAccount" : "Se connecter"
@@ -25,9 +25,16 @@
     , "Fuel_level" : "Jauge"
  
     // About
-    , "About_whatis_header" : "Qu'est ce que MetroCarFinder?"
-    , "About-whatis_content" : "<p>MetroCarFinder est une application qui permet de localiser les véhicules car2go dans les villes où le service est disponible.</p>"
+    , "About_whatis_header" : "Qu'est ce que Metro car2go?"
+    , "About_whatis_content" : "<p>Metro car2go est une application qui permet de localiser les véhicules car2go dans les villes où le service est disponible.</p>"
+    , "About_credits_header"        : "Credits"
+    , "About_credits_content"       : "<p>Thanks to to the following contributors for their help.</p><ul><li>Icon &amp; graphic design: <a href='https://twitter.com/PaulAhernTweets'>@PaulAherTweets</a></li><li>German translation: <a href='http://twitter.com/asciidisco'>@asciidisco</a></li><li>French translation: <a href='http://twitter.com/opepin'>@opepin</a></li></ul>"
  
     // Privacy policy
-    , "Privacy_policy_content" : "<p>MetroCarFinder ne sauvegarder aucune information personnellement identifiable. En fait, il n'enregistre aucune information du tout. Toutes les données sont transmises à Bing Maps et les services de localisation car2go.</p>"
+    , "Privacy_policy_content" : "<p>Metro car2go ne sauvegarder aucune information personnellement identifiable. En fait, il n'enregistre aucune information du tout. Toutes les données sont transmises à Bing Maps et les services de localisation car2go.</p>"
+        
+    // Share
+    , "Share_header"                : "Share this app"
+    , "Share_content"               : "<p>You can help get the word about this app by submitting a rating or review. Go to the app's page in the Store, tap or click Write a review, choose a rating, and then share your thoughts about the app.</p><p>Share a link to this app by clicking the button below.</p>"
+    , "Share_button"                : "Share"
 }

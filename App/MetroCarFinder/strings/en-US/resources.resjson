@@ -14,6 +14,7 @@
     , "Settings"                    : "Settings"
     , "About"                       : "About"
     , "Privacy_policy"              : "Privacy policy"
+    , "Share_app"                   : "Share this app"
 
 
     // Settings
@@ -25,12 +26,17 @@
     , "Fuel_level"                  : "Fuel level"
 
     // About
-    , "About_whatis_header"         : "What is MetroCarFinder?"
-    , "About_whatis_content"        : "<p>MetroCarFinder is an app to find available car2go vehicles in supported cities.</p>"
+    , "About_whatis_header"         : "What is Metro car2go?"
+    , "About_whatis_content"        : "<p>Metro car2go is an app to find available car2go vehicles in supported cities.</p>"
     , "About_credits_header"        : "Credits"
-    , "About_credits_content"       : "<p>Thanks to to the following contributors for their help.</p><ul><li>German translation: <a href='http://twitter.com/asciidisco'>@asciidisco</a></li><li>French translation: <a href='http://twitter.com/opepin'>@opepin</a></li></ul>"
+    , "About_credits_content"       : "<p>Thanks to to the following contributors for their help.</p><ul><li>Icon &amp; graphic design: <a href='https://twitter.com/PaulAhernTweets'>@PaulAherTweets</a></li><li>German translation: <a href='http://twitter.com/asciidisco'>@asciidisco</a></li><li>French translation: <a href='http://twitter.com/opepin'>@opepin</a></li></ul>"
 
     // Privacy policy
-    , "Privacy_policy_content"      : "<p>MetroCarFinder does not track nor does it save any personally identifiable information. In fact, it saves no information at all. All data is passed to Bing Maps and to the car2go location services.</p>"
+    , "Privacy_policy_content"      : "<p>Metro car2go does not track nor does it save any personally identifiable information. In fact, it saves no information at all. All data is passed to Bing Maps and to the car2go location services.</p>"
+
+    // Share
+    , "Share_header"                : "Share this app"
+    , "Share_content"               : "<p>You can help get the word about this app by submitting a rating or review. Go to the app's page in the Store, tap or click Write a review, choose a rating, and then share your thoughts about the app.</p><p>Share a link to this app by clicking the button below.</p>"
+    , "Share_button"                : "Share"
 
 }
