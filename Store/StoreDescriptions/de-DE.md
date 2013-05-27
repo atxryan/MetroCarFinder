@@ -12,6 +12,7 @@ Diese Windows-Speicher-app zeigt alle verfügbaren car2go Fahrzeuge und Parkplä
 ## Screenshots
 -Finden Sie alle verfügbaren car2go Fahrzeuge in Ihrer Stadt.
 -Erhalten Sie der Vogelperspektive, wie Sie die Ansicht vergrößern.
+- Snap app to the side.
 
 ## Copyright
 Copyright © 2013, Ryan Joy

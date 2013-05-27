@@ -12,6 +12,7 @@ This Windows Store app shows all available car2go vehicles and parking spots in 
 ## Screenshots
 - See all available car2go vehicles in your city.
 - Get a bird's eye view as you zoom in.
+- Snap app to the side.
 
 ## Copyright
 Copyright © 2013, Ryan Joy
