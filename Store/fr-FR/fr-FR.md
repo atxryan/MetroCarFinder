@@ -12,7 +12,7 @@ Cette app Store Windows montre tous les véhicules disponibles car2go et places 
 ## Screenshots
 -Voir tous les véhicules car2go disponibles dans votre ville.
 -Obtenir une vue d'oiseau mesure que vous approchez.
--Snap app to the side.
+-App Snap sur le côté.
 
 ## Copyright
 Copyright © 2013, Ryan Joy
