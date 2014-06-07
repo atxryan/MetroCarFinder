@@ -1,0 +1,42 @@
+﻿// en-US
+{
+    // Appbar commands
+      "MyLocation"                  : "Mi posición"
+    , "MyLocationTooltip"           : ""
+    , "GetAllCars"                  : "Recargar"
+    , "GetAllCarsTooltip"           : ""
+    , "ShowParking"                 : "Mostrar lugares de aparcamiento"
+    , "ShowParkingTooltip"          : ""
+
+    , "ChangeCity"                  : "Cambiar ciudad"
+
+    // Settings charms
+    , "Settings"                    : "Configuración"
+    , "About"                       : "Acerca"
+    , "Privacy_policy"              : "Póliza de privacidad"
+    , "Share_app"                   : "Compartir esta app"
+
+
+    // Settings
+    , "SignInToYourAccount"         : "Entrar a tu cuenta"
+    , "SignInButton"                : "Entrar"
+    , "Choose_your_car2go_city"     : "Elige tu ciudad de Car2Go"
+    , "City_label"                  : "Ciudad"
+    , "DisplayLanguageHeader"       : "Idioma de la pantalla"
+    , "Fuel_level"                  : "Nivel de combustible"
+
+    // About
+    , "About_whatis_header"         : "¿Que es Metro Car2Go?"
+    , "About_whatis_content"        : "<p>Metro Car2Go es un app para encontrar vehículos de Car2Go en ciudades disponibles.</p>"
+    , "About_credits_header"        : "Creditos"
+    , "About_credits_content"       : "<p>Gracias a los siguientes contribuyentes por su ayuda. </p><ul><li>Icono &amp; diseño gráfico: <a href='https://twitter.com/PaulAhernTweets'>@PaulAherTweets</a></li><li>Traducción Alemán: <a href='http://twitter.com/asciidisco'>@asciidisco</a></li><li>Traducción Francésa: <a href='http://twitter.com/opepin'>@opepin</a></li><li>Traducción Española: <a href='http://twitter.com/josejlm2'>@josejlm2</a></li></ul>"
+
+    // Privacy policy
+    , "Privacy_policy_content"      : "<p>Metro Car2Go no sigue ni guarda cualquier información personal identificable. De hecho, no guarda ninguna información. Todos los datos so transferidos a Mapas Bing y a servicios de localización de Car2Go.</p>"
+
+    // Share
+    , "Share_header"                : "Compartir esta app"
+    , "Share_content"               : "<p>Tu puedes ayudar a correr la voz sobre este app mediante la presentación de una valoración o una revisión. Ve a la pagina de el app en la tienda en linea, toque o presione Escribir critica, elija una puntuación, y luego comparta su opinion acerca de el app.</p><p>Comparta el enlace de este app haciendo clic en el botón de abajo.</p>"
+    , "Share_button"                : "Compartir"
+
+}
